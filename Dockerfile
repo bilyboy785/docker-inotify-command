@@ -5,10 +5,10 @@ MAINTAINER Martin Bouillaud <contact@bouillaudmartin.fr>
 ENV TERM=xterm-256color
 ENV PYTHONUNBUFFERED=1
 
-RUN true && echo "http://dl-cdn.alpinelinux.org/alpine/v3.14/community" >> /etc/apk/repositories && \
+RUN true && echo "http://dl-cdn.alpinelinux.org/alpine/v3.17/community" >> /etc/apk/repositories && \
 apk --update upgrade && \
 apk add bash curl htop runit && \
-apk add --no-cache python3 py3-pip icu-libs shadow && \
+apk add --no-cache python3 py3-pip icu-libs shadow coreutils && \
 rm -rf /var/cache/apk/*
 
 RUN pip3 install watchdog --use-pep517 && \
