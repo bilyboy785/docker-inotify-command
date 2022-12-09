@@ -1,7 +1,7 @@
 docker-inotify-command
 ======================
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)  [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://docker.com/) [![Docker Pulls](https://badgen.net/docker/pulls/martinbouillaud/inotify-command?icon=docker&label=pulls)](https://hub.docker.com/r/martinbouillaud/inotify-command:latest)  [![Docker Image Size](https://img.shields.io/docker/image-size/martinbouillaud/inotify-command?sort=date)](https://hub.docker.com/r/martinbouillaud/inotify-command/) [![Github last-commit](https://img.shields.io/github/last-commit/bilyboy785/docker-inotify-command)](https://github.com/bilyboy785/docker-inotify-command)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)  [![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://docker.com/) [![Docker Pulls](https://badgen.net/docker/pulls/martinbouillaud/inotify-command?icon=docker&label=pulls)](https://hub.docker.com/r/martinbouillaud/inotify-command:latest)  [![Docker Image Size](https://img.shields.io/docker/image-size/martinbouillaud/inotify-command?sort=date)](https://hub.docker.com/r/martinbouillaud/inotify-command/) [![Github last-commit](https://img.shields.io/github/last-commit/bilyboy785/docker-inotify-command)](https://github.com/bilyboy785/docker-inotify-command) ![Push to Docker Hub](https://github.com/bilyboy785/docker-inotify-command/actions/workflows/push_dockerhub.yml/badge.svg)
 
 **Forked from [coppit/docker-inotify-command](https://github.com/coppit/docker-inotify-command)**
 
