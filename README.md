@@ -12,7 +12,9 @@ Usage
 
 Run:
 
-`sudo docker run --name=inotify-command -d -v /etc/localtime:/etc/localtime -v /config/dir/path:/config:rw -v /dir/path:/dir1 martinbouillaud/inotify-comman:latest`
+```
+sudo docker run --name=inotify-command -d -v /etc/localtime:/etc/localtime -v /config/dir/path:/config:rw -v /dir/path:/dir1 martinbouillaud/inotify-comman:latest
+```
 
 To check the status, run:
 
@@ -62,7 +64,9 @@ This example is to run a permissions-repairing utility whenever there's a change
 
 Since the `newperms` utility does an explicit "chown -R nobody:users", we need to use the UMAP and GMAP environment variables to update the user and group in the container so that it will match the host. For example:
 
-`docker run -e UMAP=nobody:99:100 -e GMAP=users:100 --name=inotify-command -d -v /etc/localtime:/etc/localtime -v /config/dir/path:/config:rw -v /dir/path:/dir2:rw -v /usr/local/sbin/newperms:/newperms martinbouillaud/inotify-comman:latest`
+```
+docker run -e UMAP=nobody:99:100 -e GMAP=users:100 --name=inotify-command -d -v /etc/localtime:/etc/localtime -v /config/dir/path:/config:rw -v /dir/path:/dir2:rw -v /usr/local/sbin/newperms:/newperms martinbouillaud/inotify-comman:latest
+```
 
 This example tells SageTV to rescan its imported media when the media directory changes:
 
