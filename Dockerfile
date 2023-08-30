@@ -8,7 +8,7 @@ ENV PYTHONUNBUFFERED=1
 RUN true && echo "http://dl-cdn.alpinelinux.org/alpine/v3.17/community" >> /etc/apk/repositories && \
 apk --update upgrade && \
 apk add bash curl htop runit && \
-apk add --no-cache python3 py3-pip icu-libs shadow coreutils rsync && \
+apk add --no-cache python3 py3-pip icu-libs shadow coreutils rsync openssh-server && \
 rm -rf /var/cache/apk/*
 
 RUN pip3 install watchdog --use-pep517 && \

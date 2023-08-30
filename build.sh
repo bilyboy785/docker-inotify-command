@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-docker build --rm=true -t coppit/inotify-command .
+export DOCKER_BUILDKIT=1
+
+docker buildx build --platform linux/amd64 -t martinbouillaud/inotify-command .
