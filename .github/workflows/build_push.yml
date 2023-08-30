@@ -3,6 +3,9 @@ name: Build & Push Docker Image
 on:
   push:
     tags: [ '*' ]
+    branches: [ "main" ]
+  schedule:
+    - cron: "30 5 * * *"
 
 jobs:
   build-push:
