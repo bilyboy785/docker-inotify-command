@@ -83,3 +83,7 @@ This example tells SageTV to rescan its imported media when the media directory 
     USE_POLLING=no
 
 We don't need to ignore events while the command is running because the wget command is a "fire and forget" asynchronous operation. We also don't need to use UMAP or GMAP.
+
+## Support
+
+[Buy me a coffe](https://www.buymeacoffee.com/bldwebagency)
